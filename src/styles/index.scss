@@ -1,0 +1,9 @@
+@import '../vendor/normalize.css';
+@import '../assets/fonts/fonts.scss';
+@import './container.scss';
+
+body {
+  font-family: 'Montserrat';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
