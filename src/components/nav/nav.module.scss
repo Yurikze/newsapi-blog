@@ -1,0 +1,25 @@
+@use '../../styles/variablers.scss' as vars;
+
+.nav {
+  
+  &Links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+  }
+
+  &Link{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: vars.$blue;
+    font-size: 15px;
+    font-weight: 500;
+
+    &_active {
+      color: vars.$orange;
+    }
+  }
+}

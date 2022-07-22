@@ -1,0 +1,55 @@
+@use '../../styles/variablers.scss' as vars;
+
+.search {
+  &Container {
+    display: flex;
+    position: relative;
+    flex-basis: 300px;
+    justify-content: end;
+    align-items: center;
+    min-height: 34px;
+  }
+
+  &Show {
+    border: none;
+    width: 24px;
+    height: 24px;
+    background: url('../../assets/images/Icon_type_search.svg') no-repeat center;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &Field {
+    font-size: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+
+    &Container {
+      z-index: 1;
+      background-color: #fff;
+      display: none;
+      position: absolute;
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid vars.$blue;
+      padding: 10px 16px;
+      box-sizing: border-box;
+    }
+
+    &_isShown {
+      display: flex;
+    }
+  }
+
+  &Close {
+    background: url('../../assets/images/Icon_type_close.svg') no-repeat center;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+}
