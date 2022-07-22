@@ -1,0 +1,9 @@
+.header {
+  border: 1px solid #DBDBDB;
+  padding: 10px 0;
+
+  &Container {
+    display: flex;
+    align-items: center;
+  }
+}
